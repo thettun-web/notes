@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>My Quick Notes 📝</h1>
+            <p>Save links or ideas. No server needed.</p>
+        </header>
+        
+        <form id="note-form">
+            <input type="text" id="note-input" placeholder="Enter a link or a quick thought..." autocomplete="off">
+            <button type="submit">Add Note</button>
+        </form>
+        
+        <main>
+            <h2>Saved Notes</h2>
+            <ul id="notes-list">
+                </ul>
+        </main>
+	<footer class="support-section">
+            <p>Enjoying the app? Support TNT Code! ☕️</p>
+            
+            <div class="support-content">
+                <a href="https://buymeacoffee.com/thetnaingtun" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" class="bmc-btn">
+                </a>
+
+                <div class="qr-container">
+                    <img src="bmc_qr.png" alt="Scan to Donate" class="qr-code">
+                    <span>Scan to donate</span>
+                </div>
+            </div>
+        </footer>
+	<div style="margin-top: 20px; font-size: 12px; color: #aaa;">
+    		&copy; 2023 Thet Naing Tun. Built with 💻 & ☕️.
+	</div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

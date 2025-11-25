@@ -1,0 +1,195 @@
+/* Basic setup */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Main app container */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+header {
+    background-color: #4A90E2; /* A cool blue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0 0;
+    opacity: 0.9;
+}
+
+/* Form styling */
+#note-form {
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+#note-input {
+    flex-grow: 1; /* Takes up available space */
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 16px;
+}
+
+#note-input:focus {
+    outline: none;
+    border-color: #4A90E2;
+}
+
+#note-form button {
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    margin-left: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#note-form button:hover {
+    background-color: #357ABD;
+}
+
+/* Notes list styling */
+main {
+    padding: 20px;
+}
+
+#notes-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#notes-list li {
+    background-color: #fdfdfd;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    word-break: break-all; /* Ensures long links don't break the layout */
+}
+
+/* Style for the text content of the note */
+.note-content {
+    flex-grow: 1;
+    margin-right: 15px;
+}
+
+/* Auto-detect and style links */
+.note-content a {
+    color: #007bff;
+    text-decoration: none;
+}
+.note-content a:hover {
+    text-decoration: underline;
+}
+
+/* Delete button */
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.delete-btn:hover {
+    opacity: 1;
+}
+
+/* --- Support / Donation Section --- */
+
+.support-section {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px dashed #eee; /* A dashed line to separate it from notes */
+    text-align: center;
+}
+
+.support-section p {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.support-content {
+    display: flex;
+    flex-direction: column; /* Stack them by default */
+    align-items: center;
+    gap: 20px;
+}
+
+/* Style the official BMC button image */
+.bmc-btn {
+    height: 50px;
+    width: auto;
+    transition: transform 0.2s;
+}
+
+.bmc-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Style the QR Code container */
+.qr-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.qr-code {
+    width: 120px; /* Keep it small and neat */
+    height: auto;
+    border-radius: 4px;
+}
+
+.qr-container span {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* If the screen is wide enough, put them side-by-side */
+@media (min-width: 500px) {
+    .support-content {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
