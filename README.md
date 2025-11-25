@@ -10,6 +10,8 @@
 
 **Quick Notes** is a lightweight application designed to store your thoughts, to-do lists, and reading links instantly. It requires **no login**, **no database**, and **no server**.
 
+https://thettun-web.github.io/notes/
+
 Everything you type is saved securely in your browser's `localStorage`. Your data never leaves your device.
 
 ## 🚀 Features
